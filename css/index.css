@@ -1,33 +1,42 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,900;1,400&display=swap');
-
-:root {
-
-}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;700;900&display=swap');
 
 body {
-	/* Default properties */
+	background-color: #EDF1F5;
+	font: 300 normal 1.0em/1 'Roboto', helvetica, arial, sans-serif;
 }
 
 .property {
-	background-color: lightgreen;
-	width: 20em;
-	padding: 2em;
+	background-color: #fff;;
+	width: 24em;
 }
 
-.howmany {
-	/* color: red; */
+.img-fluid {
+	max-width: 100%;
+}
+
+.details {
+	list-style: none;
+	padding-left: 0;
+}
+.details li {
+	display: inline;
+	text-transform: uppercase;
 	font-weight: 700;
+	color: #888;
+	padding: 1em 0;
 }
-.rooms {
-	list-style-type: none;
+.details li::after {
+	content: " 😄";
+}
+.details li:last-child::after {
+	content: none;
 }
 
-.a {
-	/* background-color: blue; */
+
+.price {
+	font-size: 2em;
 }
-.b {
-	/* background-color: red; */
-}
-.c {
-	/* background-color: gold; */
+.property h1 { 
+	font-weight: 300;
+	font-size: 1em;
 }
